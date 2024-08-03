@@ -1,7 +1,7 @@
 # Документация
 
 <p align="center">
-  <img width="500" src="material/eidolon_logo.png">
+  <img width="500" src="materials/eidolon_logo.png">
 </p>
 
 ## Оглавление

@@ -17,29 +17,12 @@
 
 > Вы можете использовать `TestScript` для тестирования решения. Взаимодействуйте с ним через компонент на сцене.
 
-<details><summary>Иерархия проекта</summary>
-  
-### Иерархия файлов
 
-- 📂 Scenes
-  - ⏯️ SampleScene.scene
-- 📂 Scripts
-  - 📄 TestScript.cs
-  - 📂 EventService
-    - 📄 EventService.cs
-    - 📄 Event.cs
-    - 📂 StorageProviders
-      - 📄 EventsFileStorageProvider.cs
-      - 📄 EventsPlayerPrefsStorageProvider.cs
-      - 📂 Abstract
-        - 📄 IEventsStorageProvider.cs
-        - 📄 EventsStorageProviderBase.cs
-  - 📂 Network
-      - 📄 NetworkManager.cs
-      - 📄 Payload.cs
-- 📂 Events Storage Providers
-  - 💾 EventsFileStorage.asset
-  - 💾 EventsPlayerPrefsStorage.asset
+
+### Объекты на сцене
+- `Test Script`: Имеет несколько кнопок, используется для тестирования сервиса;
+- `EventService`: Сервис ивентов, настраиваются ссылки и `cooldownBeforeSend` в секундах;
+- `NetworkManager`: Менеджер сети, настраивается `serverUrl`.
  
 ### Пространства имён и классы
 
@@ -59,7 +42,30 @@ Eidolon
     └── class Payload<T>
 ```
 
-</details>
+### Иерархия файлов
+  
+```
+Assets
+├── 📂 Scenes
+│   └── ⏯️ SampleScene.scene
+├── 📂 Scripts
+│   ├── 📄 TestScript.cs
+│   ├── 📂 EventService
+│   │   ├── 📄 EventService.cs
+│   │   ├── 📄 Event.cs
+│   │   └── 📂 StorageProviders
+│   │       ├── 📄 EventsFileStorageProvider.cs
+│   │       ├── 📄 EventsPlayerPrefsStorageProvider.cs
+│   │       └── 📂 Abstract
+│   │           ├── 📄 IEventsStorageProvider.cs
+│   │           └── 📄 EventsStorageProviderBase.cs
+│   └── 📂 Network
+│       ├── 📄 NetworkManager.cs
+│       └── 📄 Payload.cs
+└── 📂 Events Storage Providers
+    ├── 💾 EventsFileStorage.asset
+    └── 💾 EventsPlayerPrefsStorage.asset
+```
 
 ## Зависимости
 

@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 22630722}
   - component: {fileID: 22630721}
   m_Layer: 0
-  m_Name: Test Script
+  m_Name: TestScript
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

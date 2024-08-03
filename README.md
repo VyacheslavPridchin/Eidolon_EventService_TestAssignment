@@ -26,26 +26,26 @@
  
 ### Пространства имён и классы
 
-```
-Eidolon
-├── Events
-│   ├── class EventService
-│   ├── class Event
-│   └── Storage
-│       ├── Abstract
-│       │   ├── interface IEventsStorageProvider
-│       │   └── abstract class EventsStorageProviderBase
-│       ├── class EventsPlayerPrefsStorageProvider
-│       └── class EventsFileStorageProvider
-└── Network
-    ├── class NetworkManager
-    └── class Payload<T>
+```csharp
+┌ Eidolon
+├── 📦 Events
+│   ├── 🛠️ class EventService
+│   ├── 🛠️ class Event
+│   └── 📦 Storage
+│       ├── 📦 Abstract
+│       │   ├── 🛠️ interface IEventsStorageProvider
+│       │   └── 🛠️ abstract class EventsStorageProviderBase
+│       ├── 🛠️ class EventsPlayerPrefsStorageProvider
+│       └── 🛠️ class EventsFileStorageProvider
+└── 📦 Network
+    ├── 🛠️ class NetworkManager
+    └── 🛠️ class Payload<T>
 ```
 
 ### Иерархия файлов
   
 ```
-Assets
+┌ Assets
 ├── 📂 Scenes
 │   └── ⏯️ SampleScene.scene
 ├── 📂 Scripts

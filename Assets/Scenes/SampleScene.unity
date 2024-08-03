@@ -244,7 +244,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <StorageProvider>k__BackingField: {fileID: 11400000, guid: 16010d89b7173604e83891b267a56458, type: 2}
   <NetworkManager>k__BackingField: {fileID: 78468063}
-  cooldownBeforeSend: 10
+  cooldownBeforeSend: 3
 --- !u!4 &584348280
 Transform:
   m_ObjectHideFlags: 0

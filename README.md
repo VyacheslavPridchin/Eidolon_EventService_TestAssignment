@@ -17,6 +17,50 @@
 
 > Вы можете использовать `TestScript` для тестирования решения. Взаимодействуйте с ним через компонент на сцене.
 
+<details><summary>Иерархия проекта</summary>
+  
+### Иерархия файлов
+
+- 📂 Scenes
+  - ⏯️ SampleScene.scene
+- 📂 Scripts
+  - 📄 TestScript.cs
+  - 📂 EventService
+    - 📄 EventService.cs
+    - 📄 Event.cs
+    - 📂 StorageProviders
+      - 📄 EventsFileStorageProvider.cs
+      - 📄 EventsPlayerPrefsStorageProvider.cs
+      - 📂 Abstract
+        - 📄 IEventsStorageProvider.cs
+        - 📄 EventsStorageProviderBase.cs
+  - 📂 Network
+      - 📄 NetworkManager.cs
+      - 📄 Payload.cs
+- 📂 Events Storage Providers
+  - 💾 EventsFileStorage.asset
+  - 💾 EventsPlayerPrefsStorage.asset
+ 
+### Пространства имён и классы
+
+```
+Eidolon
+├── Events
+│   ├── class EventService
+│   ├── class Event
+│   └── Storage
+│       ├── Abstract
+│       │   ├── interface IEventsStorageProvider
+│       │   └── abstract class EventsStorageProviderBase
+│       ├── class EventsPlayerPrefsStorageProvider
+│       └── class EventsFileStorageProvider
+└── Network
+    ├── class NetworkManager
+    └── class Payload<T>
+```
+
+</details>
+
 ## Зависимости
 
 - **Easy Buttons:** Используется для удобства вызова методов в редакторе Unity (для UnityEditor). [Easy Buttons на GitHub](https://github.com/madsbangh/EasyButtons)
